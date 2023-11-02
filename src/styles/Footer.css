@@ -1,0 +1,12 @@
+footer {
+  width: 100%;
+  background-color: var(--black);
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--pink);
+  cursor: pointer;
+}

@@ -1,5 +1,33 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #F6F7F8;
+  --black: #000000;
+  --purple: #4E4187;
+  --light-purple: #8093F1;
+  --light-green: #07BEB8;
+  --pink: #F42272;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--light-purple), var(--purple));
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

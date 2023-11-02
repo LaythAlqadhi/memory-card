@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px black;
+  font-family: 'Yatra One', sans-serif;
+  margin-top: 25px;
+}
+
+@media (min-width: 650px) {
+  header {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 850px) {
+  header {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  header {
+    font-size: 1.8rem;
+  }
+}

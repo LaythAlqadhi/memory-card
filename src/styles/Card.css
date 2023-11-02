@@ -1,0 +1,112 @@
+.card {
+  perspective: 1000px;
+  width: 150px;
+  height: 175px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .7s;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.card-inner.shuffle {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  background: linear-gradient(to bottom, var(--light-green), var(--purple));
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card-front {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px black;
+  font-family: 'Yatra One', sans-serif;
+}
+
+.card img {
+  width: 75%;
+  height: 75%;
+}
+
+.card-info {
+  width: 100%;
+  background-color: var(--black);
+  border-radius: 5px;
+  padding: 2.5px;
+  text-align: center;
+  font-size: .8rem;
+  font-family: 'Yatra One', sans-serif;
+  color: var(--white);
+}
+
+@media (min-width: 650px) {
+  .card {
+    width: 200px;
+    height: 225px;
+  }
+  
+  .card-info {
+    font-size: 1rem;
+  }
+
+  .card-back {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .card {
+    width: 250px;
+    height: 275px;
+  }
+
+  .card-info {
+    font-size: 1.2rem;
+  }
+
+  .card-back {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .card {
+    width: 300px;
+    height: 325px;
+  }
+
+  .card-info {
+    font-size: 1.4rem;
+  }
+
+  .card-back {
+    font-size: 2.2rem;
+  }
+}
